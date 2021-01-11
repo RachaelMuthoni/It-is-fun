@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <head>
-    <title>My project</title>
+    <title>Griffin Code Challenge</title>
 </head>
-<body>
-    <p>HELLOWORLD</p>
-    <b>hope you are fine</b>
+<body><main style="margin: 8px;">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <h3>Order Calculation Module</h3>
+            </div>
+                <div class="card-body">
+                    <p>Price:<input type="number" id="price" class="formcontrol" min="0" step="1" required></p>
+                    <p>Quantity: <input type="number" id="quantity" class="formcontrol" min="0" step="1"></p>
+                    <p>ID: <input type="number" id="id" class="formcontrol" min="0" required></p>
+                    <p><h4 id="GrandTotalofOrder"></h4></p>
+                    <p><h4 id="GrandTotalincludingDiscounts"></h4></p>
+                    <button type="button" class="btn btn-outline-primary" id="btn1">Calculate Total</button>
+                    <button type="button" class="btn btn-outline-primary" id="btn2">Add Item</button>
+                    <button type="button" class="btn btn-outline-primary" id="btn3">Remove item</button>
+                </div>
+        </div>
+    </div>
+    
+</main>
+<script src="script.js"></script>
 </body>
 </html>
